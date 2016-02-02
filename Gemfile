@@ -19,7 +19,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
-gem :production do
+group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
