@@ -1,5 +1,5 @@
-== One Month Rails Project
+== Rails Rediscovery Project
 
-This repo is my version of the One Month Rails tutorial project. Following the series to refresh my rails skills after a long break!
+This repo is my version of the One Month Rails tutorial project. Following the series and improvising on my own to refresh my rails skills after a long break!
 
 -dex
