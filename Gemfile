@@ -10,7 +10,7 @@ gem 'paperclip', '~> 4.3'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'aws-sdk-v1'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'byebug'
