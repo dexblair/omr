@@ -10,8 +10,7 @@ gem 'paperclip', '~> 4.3'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'aws-sdk-v1'
 
 group :development, :test do
   gem 'byebug'
@@ -22,4 +21,5 @@ group :production do
 	gem 'rails_12factor'
 end
 
-
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -81,4 +81,10 @@ Rails.application.configure do
   # Set this to actual hostname
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # Paperclip defaults for Amazon S3
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :bucket => 'S3_BUCKET_NAME'
+  } 
+
 end
