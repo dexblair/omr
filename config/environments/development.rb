@@ -44,5 +44,11 @@ Rails.application.configure do
 
   # ImageMagick
   Paperclip.options[:command_path] = "C:/Program Files/ImageMagick-6.9.3-Q16"
+
+  # Paperclip defaults for Amazon S3
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :bucket => 'goonterest'
+  }
   
 end
