@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_many :pins
+
   #vaildates	:password,	:presence => true,
   #											:confirmation => true,
   #											:length => {:within => 6..40},
