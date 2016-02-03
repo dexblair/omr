@@ -84,7 +84,7 @@ Rails.application.configure do
   # Paperclip defaults for Amazon S3
   config.paperclip_defaults = {
     :storage => :s3,
-    :bucket => 'goonterest'
+    :bucket => 'S3_BUCKET'
   } 
 
 end
