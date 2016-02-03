@@ -8,7 +8,6 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip', '~> 4.3'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'aws-sdk', '< 2.0'
 
