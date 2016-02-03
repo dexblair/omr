@@ -1,32 +1,14 @@
-<h1>Listing Pins</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Description</th>
-      <th>User Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @pins.each do |pin| %>
-      <tr>
-        <td><%= image_tag pin.image.url(:medium) if pin.image? %></td>
-        <td><%= pin.description %></td>
-        <td><%= pin.user.email if pin.user %></td>
-        <td><%= link_to 'Show', pin, class: "btn btn-sm btn-primary" %></td>
-        <% if pin.user == current_user %>
-          <td><%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-sm btn-primary" %></td>
-          <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-danger" %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-<% if user_signed_in? %>
-  <%= link_to 'New Pin', new_pin_path %>
-<% end %>
+<div id="pins">
+  <% @pins.each do |pin| %>
+    <div class="box">
+      <%= image_tag pin.image.url(:medium) if pin.image? %>
+      <%= pin.description %>
+      <%= pin.user.email if pin.user %>
+      <%= link_to 'Show', pin, class: "btn btn-sm btn-primary" %>
+      <% if pin.user == current_user %>
+        <%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-sm btn-primary" %>
+        <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-danger" %>
+      <% end %>
+      </div><!-- /.box -->
+  <% end %>
+</div><!-- /#pins -->
