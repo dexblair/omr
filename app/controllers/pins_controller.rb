@@ -5,10 +5,10 @@ class PinsController < ApplicationController
   
 
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order(:created_at).reverse_order
   end
 
-  def show
+  def show 
   end
 
   def new
