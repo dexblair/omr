@@ -9,13 +9,14 @@ gem 'devise'
 gem 'paperclip', '~> 4.3'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
-gem 'aws-sdk', '< 2.0'
+
 
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
 end
 group :production do
+	gem 'aws-sdk', '< 2.0'
 	gem 'pg'
 	gem 'rails_12factor'
 end
